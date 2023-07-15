@@ -41,16 +41,20 @@ header p {
 }
 
 /* Team Members */
-.members {
+/* .members {
   border-radius: 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 60px;
+} */
+.members {
+  display: grid;
+  grid-template-rows: repeat(2, 450px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
 }
-.member-container {
-  height: 420px;
-}
+
 .image-container p {
   writing-mode: vertical-rl;
   margin: 0 5px;
@@ -108,12 +112,10 @@ footer span {
   header p {
     max-width: 100%;
   }
-  .member-container {
-    height: 250px;
-  }
+
   .members {
+    grid-template-rows: repeat(3, 250px);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     gap: 30px;
   }
   .members > div:nth-child(3n + 2) {
