@@ -114,8 +114,6 @@ footer span {
   }
 
   .members {
-    grid-template-rows: repeat(3, 250px);
-    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
   .members > div:nth-child(3n + 2) {
